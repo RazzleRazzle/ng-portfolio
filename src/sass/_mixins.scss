@@ -9,4 +9,14 @@
     } @else {
         padding-top: $padding;
     }
-}
+};
+
+// Name wh
+// Desc
+// Return
+@mixin w-h($width, $height) {
+    width: $width;
+    height: $height;
+};
+
+
