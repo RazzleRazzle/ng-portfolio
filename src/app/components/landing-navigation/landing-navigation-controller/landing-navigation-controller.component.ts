@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-navigation-controller.component.scss']
 })
 export class LandingNavigationControllerComponent implements OnInit {
+	private 
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  private navigate = (direction: string) => {
+  	console.log(direction)
   }
 
 }

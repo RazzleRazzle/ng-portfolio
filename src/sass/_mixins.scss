@@ -19,4 +19,22 @@
     height: $height;
 };
 
+@mixin background-image($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 
+@mixin background-image-context() {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center; 
+}
