@@ -6,14 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-navigation-controller.component.scss']
 })
 export class LandingNavigationControllerComponent implements OnInit {
-	private 
+	private tracker: number = 0;
+	private pageArray: Array<any> = ["Art","Code","Blog","Contact"];
 
   constructor() { }
 
   ngOnInit() {}
 
   private navigate = (direction: string) => {
-  	console.log(direction)
+  	if (direction === "+" && this.tracker <= this.pageArray.length) {
+  		this.tracker += 1;
+  	} else if (direction === "-" && this.tracker > 0) {
+  		this.tracker -= 1;
+  	} else {}
+  	console.log(this.tracker);
   }
-
 }

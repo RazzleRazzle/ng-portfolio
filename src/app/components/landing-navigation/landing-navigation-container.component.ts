@@ -11,7 +11,5 @@ export class LandingNavigationContainerComponent implements OnInit {
 
   ngOnInit() {}
 
-  // private  = () => {
-
-  // }
+  
 }

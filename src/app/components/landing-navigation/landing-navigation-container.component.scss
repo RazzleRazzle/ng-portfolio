@@ -11,6 +11,7 @@
 		.controller {
 			@include w-h(100%, 20%);
 			background: lightgreen;
+			margin: auto;
 		}
 	}
 }

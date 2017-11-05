@@ -11,6 +11,7 @@ import { LandingNavigationCellComponent } from './components/landing-navigation/
 
 const appRoutes: Routes = [
   {path: '', component: LandingNavigationContainerComponent},
+  {path: '', component: LandingNavigationContainerComponent},
   
 ];
 

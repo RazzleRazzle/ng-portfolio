@@ -5,16 +5,25 @@
 	.content {
 		@include w-h(10%, 10%);
 		background: white;
+		margin: auto;
 		.forward {
 			width: 50%;
 			float: right; 
-			background: red;
+			background: lightpink;
 		}
 		.backward {
 			width: 50%;
 			float: left;
 			background: yellow;
+		}		
+
+		.forward:hover {
+			background: white;
 		}
+		.backward:hover {
+			background: white;
+		}
+
 
 	}
 }
