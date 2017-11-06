@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-landing-navigation-controller',
@@ -7,9 +7,9 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class LandingNavigationControllerComponent implements OnInit {
 	@Output() navigationEmitter: EventEmitter<number> = new EventEmitter();
+  @Input() pageArray: Array<any> = ["Art","Code","Blog","Contact"];
 
 	private tracker: number = 0;
-	private pageArray: Array<any> = ["Art","Code","Blog","Contact"];
 
   constructor() { }
 
@@ -18,10 +18,10 @@ export class LandingNavigationControllerComponent implements OnInit {
   private navigate = (direction: number) => {
   	if (direction === 1 && this.tracker <= this.pageArray.length) {
   		this.tracker += 1;
-  		this.navigationEmitter.emit(this.tracker)
+  		this.navigationEmitter.emit(<number>this.tracker)
   	} else if (direction === -1 && this.tracker > 0) {
   		this.tracker -= 1;
-  		this.navigationEmitter.emit(this.tracker)
+  		this.navigationEmitter.emit(<number>this.tracker)
   	} else {}
   }
 }

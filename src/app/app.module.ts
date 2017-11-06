@@ -11,9 +11,7 @@ import { LandingNavigationCellComponent } from './components/landing/landing-nav
 import { LandingContainerComponent } from './components/landing/landing-container.component';
 
 const appRoutes: Routes = [
-  {path: '', component: LandingNavigationContainerComponent},
-  {path: '', component: LandingNavigationContainerComponent},
-
+  {path: '', component: LandingContainerComponent},
 ];
 
 @NgModule({

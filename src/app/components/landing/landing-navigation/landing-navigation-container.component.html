@@ -1,10 +1,10 @@
 <div class="container">
 	<div class="content">
 		<div class="controller">
-			<app-landing-navigation-controller (navigationEmitter)="navigationReceiver($event)"></app-landing-navigation-controller>
+			<app-landing-navigation-controller (navigationEmitter)="navigationReceiver($event)" [pageArray]="pageArray"></app-landing-navigation-controller>
 		</div>
 		<div class="cell">
-			<app-landing-navigation-cell></app-landing-navigation-cell>			
+			<app-landing-navigation-cell></app-landing-navigation-cell>
 		</div>
 	</div>
-</div>  
+</div>

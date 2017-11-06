@@ -7,13 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingNavigationContainerComponent implements OnInit {
   private pageArray: Array<any> = ["Art","Code","Blog","Contact"];
+  private currentPage: string;
 
   constructor() { }
 
   ngOnInit() {}
 
-  private navigationReceiver = ($event) => {
-  	console.log(event)
+  private navigationReceiver = (tracker: number) => {
+  	this.currentPage = this.pageArray[tracker]
+    console.log(this.currentPage)
   }
 
 
