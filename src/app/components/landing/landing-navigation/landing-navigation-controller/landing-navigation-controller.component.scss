@@ -1,5 +1,5 @@
-@import "../../../../styles.scss";
-	          
+@import "../../../../../styles.scss";
+
 .container {
 	@include w-h(100%, 100%);
 	.content {
@@ -8,14 +8,14 @@
 		margin: auto;
 		.forward {
 			width: 50%;
-			float: right; 
+			float: right;
 			background: lightpink;
 		}
 		.backward {
 			width: 50%;
 			float: left;
 			background: yellow;
-		}		
+		}
 
 		.forward:hover {
 			background: white;

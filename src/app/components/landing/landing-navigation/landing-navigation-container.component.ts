@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-navigation-container.component.scss']
 })
 export class LandingNavigationContainerComponent implements OnInit {
+  private pageArray: Array<any> = ["Art","Code","Blog","Contact"];
 
   constructor() { }
 
   ngOnInit() {}
 
-  
+  private navigationReceiver = ($event) => {
+  	console.log(event)
+  }
+
+
 }

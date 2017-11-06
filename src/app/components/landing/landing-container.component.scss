@@ -1,0 +1,8 @@
+@import "../../../styles.scss";
+
+.landing-container {
+  @include w-h(100%, 100%);
+  .navigation {
+    @include w-h(100%, 100%);
+  }
+}
