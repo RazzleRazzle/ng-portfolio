@@ -3,18 +3,26 @@
 .container {
 	@include w-h(100%, 100%);
 	.content {
-		@include w-h(10%, 10%);
-		background: white;
+		@include w-h(100%, 100%);
+		// background: white;
 		margin: auto;
 		.forward {
 			width: 50%;
+      height: 80%;
 			float: right;
-			background: lightpink;
+      background: url("../../../../../assets/forward.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
 		}
 		.backward {
 			width: 50%;
+      height: 80%;
 			float: left;
-			background: yellow;
+			background: url("../../../../../assets/back.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
 		}
 
 		.forward:hover {

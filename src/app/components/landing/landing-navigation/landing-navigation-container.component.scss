@@ -1,17 +1,21 @@
 @import "../../../../styles.scss";
 
 .container {
+  @include flex-center();
 	@include w-h(100%, 100%);
-	@include background-image('../../../../assets/navigation-controller/photographs/rock.jpg');
-	@include flex-center();
+	background: lavenderblush;
 	font-family: $montserrat;
 	.content {
-		@include w-h(50%, 50%);
+		@include w-h(100%, 100%);
 		background: white;
 		.controller {
-			@include w-h(100%, 20%);
+			@include w-h(100%, 40%);
 			background: lightgreen;
-			margin: auto;
+			// margin: auto;
 		}
+    .cell {
+      @include w-h(100%, 80%);
+      background: yellow;
+    }
 	}
 }

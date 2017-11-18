@@ -9,6 +9,8 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { LandingNavigationControllerComponent } from './components/landing/landing-navigation/landing-navigation-controller/landing-navigation-controller.component';
 import { LandingNavigationCellComponent } from './components/landing/landing-navigation/landing-navigation-cell/landing-navigation-cell.component';
 import { LandingContainerComponent } from './components/landing/landing-container.component';
+import { LandingBodyComponent } from './components/landing/landing-body/landing-body.component';
+import { LandingEdgeComponent } from './components/landing/landing-edge/landing-edge.component';
 
 const appRoutes: Routes = [
   {path: '', component: LandingContainerComponent},
@@ -22,7 +24,9 @@ const appRoutes: Routes = [
     LoaderComponent,
     LandingNavigationControllerComponent,
     LandingNavigationCellComponent,
-    LandingContainerComponent
+    LandingContainerComponent,
+    LandingBodyComponent,
+    LandingEdgeComponent
   ],
   imports: [
   	RouterModule.forRoot(

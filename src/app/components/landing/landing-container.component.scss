@@ -3,12 +3,23 @@
 .landing-container {
   @include w-h(100vw, 100vh);
   background: lightblue;
-  .navigation {
-    @include w-h(25%, 25%);
+  display: block;
+  @include flex-center();
+  .navigation-container {
+    @include w-h(40vw, 40vh);
     background: green;
+    z-index: 10;
+    position: absolute;
   }
   .body-container {
     @include w-h(50%, 50%);
     background: blue;
+    z-index: 8;
+    position: absolute;
+  }
+  .edge-container {
+    @include w-h(100vw, 100vh);
+    background: lightgreen;
+    z-index: 6;
   }
 }
