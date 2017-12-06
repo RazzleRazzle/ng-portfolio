@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-landing-navigation-cell',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-navigation-cell.component.scss']
 })
 export class LandingNavigationCellComponent implements OnInit {
-
+  @Input() item: any;
   constructor() { }
 
   ngOnInit() {

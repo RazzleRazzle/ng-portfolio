@@ -1,0 +1,5 @@
+<div class="navigation">
+  <div *ngFor="let item of items" class="navigation-item" >
+    <app-landing-navigation-cell [item]="item" (click)="test(item)"></app-landing-navigation-cell>
+  </div>
+</div>

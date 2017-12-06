@@ -1,0 +1,15 @@
+@import "../../../../styles.scss";
+
+.navigation {
+  @include w-h(100%, 100%);
+  @include flex-vertical-center();
+
+  .navigation-item {
+    @include w-h(20%, 100%);
+    background: white;
+  }
+
+  .navigation-item:hover {
+    background: lightblue;
+  }
+}
