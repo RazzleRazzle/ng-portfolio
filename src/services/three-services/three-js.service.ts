@@ -32,7 +32,8 @@ export class ThreeJsService {
 
     this.renderer = new THREE.WebGLRenderer();
     this.renderer.setPixelRatio(window.devicePixelRatio);
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    //--------find better constraint
+    this.renderer.setSize(100, 100);
 
     this.canvas = document.createElement('canvas');
     this.element.innnerHTML = this.canvas;
@@ -45,9 +46,8 @@ export class ThreeJsService {
   }
 
   private createImage = () => {
-  this.context = this.canvas.getContext('2d');
-  this.context.fillStyle = 'rgb(' + Math.floor( Math.random() * 256 ) + ',' + Math.floor( Math.random() * 256 ) + ',' + Math.floor( Math.random() * 256 ) + ')';
-  this.context.fillRect( 0, 0, 256, 256 );
+    this.context.fillStyle = 'rgb(' + Math.floor( Math.random() * 256 ) + ',' + Math.floor( Math.random() * 256 ) + ',' + Math.floor( Math.random() * 256 ) + ')';
+    this.context.fillRect( 0, 0, 256, 256 );
   }
 
 
