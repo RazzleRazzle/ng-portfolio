@@ -2,41 +2,35 @@
 
 .landing-container {
   @include w-h(100vw, 100vh);
-  background: lightgrey;
-  // @include background-image('../../../assets/navigation-controller/photographs/straw_dark_01.jpg');
-
+  @include background-image('../../../assets/navigation-controller/photographs/me_2.jpg');
 
   .landing-logo {
-    @include w-h(20%, 10%);
-    background: pink;
-    float: left;
-    z-index: 2;
-
+    @include w-h(20%, 20%);
+    border: white solid 1px;
   }
 
   .landing-navigation {
-    @include w-h(80%, 5%);
-    // background: lightgreen;
-    float: right;
-    z-index: 2;
-
+    @include w-h(90%, 5%);
+    border: grey solid 1px;
+    margin: auto;
   }
 
-  .landing-title {
+  .navigation-toggle {
+    @include w-h(20%, 20%);
+    border: grey solid 1px;
+  }
+
+  .name-container {
+    @include w-h(50%, 10%);
+    top: 70%;
+    left: 10%;
     position: absolute;
-    top: 20%;
-    left: 50%;
-    z-index: 2;
-
-    @include w-h(20%, 10%);
+    color: white;
+    font-size: 5em;
+    font-family: $montserrat;
+    border: grey solid 1px;
+    // border: white solid 1px;
     // background: lightblue;
-  }
-
-  .landing-image {
-    @include w-h(10%, 10%);
-    #three-element {
-      @include w-h(100%,100%);
-    }
   }
 
 }

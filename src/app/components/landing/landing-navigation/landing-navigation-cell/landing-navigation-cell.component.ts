@@ -9,7 +9,10 @@ export class LandingNavigationCellComponent implements OnInit {
   @Input() item: any;
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  private route = (item) => {
+
   }
 
 }

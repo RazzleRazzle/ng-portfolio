@@ -10,9 +10,7 @@ export class LandingNavigationComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
   private test = (test:any) => {
     console.log('test')

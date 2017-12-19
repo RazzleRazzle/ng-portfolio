@@ -12,6 +12,7 @@ import { LandingNavigationComponent } from './components/landing/landing-navigat
 import { LandingImageComponent } from './components/landing/landing-image/landing-image.component';
 import { LandingLogoComponent } from './components/landing/landing-logo/landing-logo.component';
 import { LandingNavigationCellComponent } from './components/landing/landing-navigation/landing-navigation-cell/landing-navigation-cell.component';
+import { LandingNavigationToggleComponent } from './components/landing/landing-navigation-toggle/landing-navigation-toggle.component';
 
 //----------------------------Services---------------------------------------------------------//
 import {LandingNavigationAnimationService} from '../services/component-services/landing-navigation-services/landing-navigation-animation.service';
@@ -19,7 +20,9 @@ import {ThreeJsService} from '../services/three-services/three-js.service';
 //---------------------------Routing-----------------------------------------------------------//
 const appRoutes: Routes = [
   {path: '', component: LandingContainerComponent},
-  {path: 'projects', component: PaintingPageContainerComponent}
+  {path: 'art', component: PaintingPageContainerComponent},
+  {path: 'development', component: PaintingPageContainerComponent},
+  {path: 'contact', component: PaintingPageContainerComponent}
 ];
 
 //---------------------------Module-------------------------------------------------------------//
@@ -33,7 +36,8 @@ const appRoutes: Routes = [
     LandingNavigationComponent,
     LandingImageComponent,
     LandingLogoComponent,
-    LandingNavigationCellComponent
+    LandingNavigationCellComponent,
+    LandingNavigationToggleComponent
   ],
   imports: [
   	RouterModule.forRoot(

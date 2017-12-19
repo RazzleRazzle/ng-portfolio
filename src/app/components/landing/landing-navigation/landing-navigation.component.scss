@@ -6,10 +6,12 @@
 
   .navigation-item {
     @include w-h(20%, 100%);
-    background: white;
+    @include flex-center();
+    color: lightgrey;
   }
 
   .navigation-item:hover {
-    background: lightblue;
+    background: white;
+    opacity: 0.3;
   }
 }

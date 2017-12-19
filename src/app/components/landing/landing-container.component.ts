@@ -6,20 +6,16 @@ import {ThreeJsService} from '../../../services/three-services/three-js.service'
   styleUrls: ['./landing-container.component.scss']
 })
 export class LandingContainerComponent implements OnInit {
+  private navigationActive: boolean = false;
 
-  constructor(
-    private three: ThreeJsService
-  ) { }
+  constructor(private three: ThreeJsService) { }
 
   ngOnInit() {
   }
 
   ngAfterViewInit() {
-    this.three.init();
-    this.three.animate();
+    // this.three.init();
+    // this.three.animate();
   }
 
-  private test = () => {
-    console.log('test')
-  }
 }

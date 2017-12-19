@@ -2,14 +2,13 @@
   <div class="landing-logo">
     <app-landing-logo></app-landing-logo>
   </div>
-  <div class="landing-navigation" >
-    <app-landing-navigation ></app-landing-navigation>
-  </div>
-  <div class="landing-title" (click)="test()">
+  <div class="name-container">
     jake musich
   </div>
-  <div class="landing-image">
-    <div id="three-element">
-    </div>
+  <div class="navigation-toggle">
+    <app-landing-navigation-toggle></app-landing-navigation-toggle>
+  </div>
+  <div class="landing-navigation" *ngIf="navigationActive">
+    <app-landing-navigation></app-landing-navigation>
   </div>
 </div>
