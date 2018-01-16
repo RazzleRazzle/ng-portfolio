@@ -1,14 +1,11 @@
 <div class="landing-container">
-  <div class="landing-logo">
-    <app-landing-logo></app-landing-logo>
+  <div class="landing-upper" (click)="animate()">
+    <app-landing-upper-name></app-landing-upper-name>
   </div>
-  <div class="name-container">
-    jake musich
+  <div class="landing-image">
+    <app-landing-image></app-landing-image>
   </div>
-  <div class="navigation-toggle">
-    <app-landing-navigation-toggle></app-landing-navigation-toggle>
-  </div>
-  <div class="landing-navigation" *ngIf="navigationActive">
-    <app-landing-navigation></app-landing-navigation>
+  <div class="landing-lower">
+    <app-landing-lower-name></app-landing-lower-name>
   </div>
 </div>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ThreeJsService} from '../../../services/three-services/three-js.service';
+import {LandingNavigationAnimationService} from '../../../services/component-services/landing-navigation-services/landing-navigation-animation.service';
+
 @Component({
   selector: 'app-landing-container',
   templateUrl: './landing-container.component.html',
@@ -8,14 +10,20 @@ import {ThreeJsService} from '../../../services/three-services/three-js.service'
 export class LandingContainerComponent implements OnInit {
   private navigationActive: boolean = false;
 
-  constructor(private three: ThreeJsService) { }
+  constructor(
+    private three: ThreeJsService,
+    private animation: LandingNavigationAnimationService
+  ) { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  private getToggle = (event) => {
+    this.navigationActive = !this.navigationActive;
   }
 
-  ngAfterViewInit() {
-    // this.three.init();
-    // this.three.animate();
+  private animate = () => {
+    console.log('animating 1');
+    this.animation.animateUpper();
   }
 
 }

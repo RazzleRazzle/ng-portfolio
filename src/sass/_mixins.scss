@@ -52,3 +52,17 @@
   -moz-box-shadow: $top, $right, $bottom, $left, $color;
   box-shadow: $top, $right, $bottom, $left, $color;
 }
+
+@mixin rotate($degree) {
+  /* Safari */
+-webkit-transform: rotate($degree);
+
+/* Firefox */
+-moz-transform: rotate($degree);
+
+/* IE */
+-ms-transform: rotate($degree);
+
+/* Opera */
+-o-transform: rotate($degree);
+}

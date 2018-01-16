@@ -1,0 +1,11 @@
+@import "../../../../styles.scss";
+
+.lower-name-container {
+  @include w-h(100%, 100%);
+  @include flex-center();
+  color: white;
+  font-size: 9em;
+  font-family:$cor;
+  // background: green;
+
+}
