@@ -1,18 +1,66 @@
 @import "../../../styles.scss";
 
-.landing-container {
+#landing {
   @include w-h(100vw, 100vh);
-  background: #050404;
+  // @include flex-center();
+  background: black;
+  font-family: $abel;
 
-  .landing-upper {
-    @include w-h(100vw, 50vh);
-    position: absolute;
-    top: -28%;
-  }
+  .container {
+    @include w-h(80vw, 85vh);
+    // @include flex-center();
+    overflow: hidden;
 
-  .landing-lower {
-    @include w-h(100vw, 50vh);
-    position: absolute;
-    top: 75%;
+    .img--container {
+      @include w-h(35vw, 20vw);
+      top: 100vh;
+      // max-width: 400px;
+      // max-height: 300px;
+      position: absolute;
+      opacity: 0;
+
+      .img--visible {
+        @include whfull();
+
+      }
+    }
+
+    .name--container {
+      @include w-h(10vw, 4vh);
+      position: absolute;
+      // top: 30vh;
+      // left: 20vw;
+      overflow: hidden;
+
+
+      .name--visible {
+        @include whfull();
+        @include flex-center();
+        letter-spacing: 1px;
+        position: relative;
+        top: -4vh;
+        font-weight: lighter;
+        color: white;
+      }
+    }
+
+    .instruction--container {
+      @include w-h(10vw, 4vh);
+      position: absolute;
+      // top: 62.5vh;
+      // left: 20vw;
+      // overflow: hidden;
+      // border: 1px solid white;
+
+      .instruction--visible {
+        @include whfull();
+        @include flex-center();
+        letter-spacing: 1px;
+        position: relative;
+        top: -4vh;
+        font-weight: lighter;
+        color: white;
+      }
+    }
   }
 }

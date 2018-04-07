@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {LandingCanvasService} from '../../../../services/component-services/canvas-service/landing-canvas.service';
 
 @Component({
   selector: 'app-landing-image',
@@ -7,10 +8,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LandingImageComponent implements OnInit {
   @Input() imageURL: any;
-  constructor() { }
 
-  ngOnInit() {
-    this.imageURL = '';
+  constructor(
+    private canvas:LandingCanvasService
+  ) {}
+
+  ngOnInit() {}
+
+  ngAfterViewInit() {
+    this.canvas.initCanvas();
   }
+
 
 }

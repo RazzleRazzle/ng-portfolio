@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {ThreeJsService} from '../../../services/three-services/three-js.service';
 import {LandingNavigationAnimationService} from '../../../services/component-services/landing-navigation-services/landing-navigation-animation.service';
+import {CursorTrackerService} from '../../../services/component-services/cursor-tracker/cursor-tracker.service';
+import _ from "lodash";
 
 @Component({
   selector: 'app-landing-container',
@@ -9,21 +11,19 @@ import {LandingNavigationAnimationService} from '../../../services/component-ser
 })
 export class LandingContainerComponent implements OnInit {
   private navigationActive: boolean = false;
+  private gridCells: Array<number>;
 
   constructor(
     private three: ThreeJsService,
-    private animation: LandingNavigationAnimationService
+    private animation: LandingNavigationAnimationService,
+    private cursor:CursorTrackerService
   ) { }
 
-  ngOnInit() {}
-
-  private getToggle = (event) => {
-    this.navigationActive = !this.navigationActive;
+  ngOnInit() {
+    this.cursor.track();
   }
 
-  private animate = () => {
-    console.log('animating 1');
+  ngAfterViewInit() {
     this.animation.animateUpper();
   }
-
 }

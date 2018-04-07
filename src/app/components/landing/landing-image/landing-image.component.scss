@@ -1,5 +1,5 @@
-.landing-image {
-  height: 100%;
-  width: 100%;
-  border: 1px solid black;
+@import "../../../../styles.scss";
+
+#canvas {
+  @include whfull();
 }
