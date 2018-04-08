@@ -12,10 +12,12 @@ import {LandingNavigationAnimationService} from '../services/component-services/
 import {ThreeJsService} from '../services/three-services/three-js.service';
 import {CursorTrackerService} from '../services/component-services/cursor-tracker/cursor-tracker.service';
 import {LandingCanvasService} from '../services/component-services/canvas-service/landing-canvas.service';
+import { HomeContainerComponent } from './components/home/home-container.component';
 
 //---------------------------Routing-----------------------------------------------------------//
 const appRoutes: Routes = [
   {path: '', component: LandingContainerComponent},
+  {path: 'home', component: HomeContainerComponent},
 ];
 
 //---------------------------Module-------------------------------------------------------------//
@@ -24,7 +26,8 @@ const appRoutes: Routes = [
     AppComponent,
     LandingContainerComponent,
     LandingImageComponent,
-    LandingLogoComponent
+    LandingLogoComponent,
+    HomeContainerComponent
   ],
   imports: [
   	RouterModule.forRoot(
