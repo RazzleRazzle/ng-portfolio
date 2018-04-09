@@ -1,0 +1,7 @@
+<div class="hm--container">
+  <div class="hm--for" *ngFor="let btn of btns" (click)="open(btn.value)">
+    <div class="btn" [routerLink]="['/' + btn.routerValue]">
+      {{btn.viewValue}}
+    </div>
+  </div>
+</div>

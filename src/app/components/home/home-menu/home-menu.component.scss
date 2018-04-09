@@ -1,0 +1,20 @@
+@import "../../../../styles.scss";
+
+.hm--container {
+  @include w-h(100%, 100%);
+  font-family: $abel;
+  color: white;
+
+  .hm--for {
+    @include w-h(100%, 5%);
+    // border: 1px solid pink;
+    transition: 700ms all;
+    @include flex-center();
+
+    .btn {
+    }
+    &:hover {
+      transform: translateX(-10px);
+    }
+  }
+}

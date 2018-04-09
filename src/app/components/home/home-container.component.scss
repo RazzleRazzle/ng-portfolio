@@ -23,24 +23,12 @@
 
       .cell-1 {
         @include w-h(100%, 25vh);
+        position: absolute;
+        top: 75vh;
+        right: 15vw;
+          font-family: $abel;
+          letter-spacing: 1px;
         // background: rgba(199, 29, 17, 0.21);
-        @include flex-center();
-
-      }
-      .cell-2 {
-        @include w-h(100%, 25vh);
-        // background: rgba(199, 99, 17, 0.21);
-
-      }
-      .cell-3 {
-        @include w-h(100%, 25vh);
-        // background: rgba(99, 99, 17, 0.21);
-        @include flex-center();
-
-      }
-      .cell-4 {
-        @include w-h(100%, 25vh);
-        // background: rgba(199, 99, 117, 0.21);
         @include flex-center();
 
       }
@@ -48,14 +36,14 @@
 
 
     .col-3 {
-      @include w-h(40vw, 100vh);
+      @include w-h(30vw, 100vh);
       // background: rgba(99, 80, 117, 0.21);
       @include flex-center();
     }
 
 
     .col-4 {
-      @include w-h(35vw, 100vh);
+      @include w-h(30vw, 100vh);
       color: white;
       font-family: $crimson;
       // background: rgba(79, 60, 117, 0.21);
@@ -64,16 +52,17 @@
     }
 
     .col-5 {
-      @include w-h(10vw, 100vh);
+      @include w-h(15vw, 100vh);
       // background: rgba(97, 12, 103, 0.51);
       color: white;
       font-family: $crimson;
+      // @include flex-center();
 
     }
   }
 
   .home--canvas-container {
-    @include w-h(100%, 100%);
+    @include w-h(100vw, 100vh);
     position: absolute;
     top: 0;
     left: 0;
