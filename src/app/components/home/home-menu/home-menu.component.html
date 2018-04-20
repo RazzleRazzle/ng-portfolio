@@ -1,7 +1,16 @@
 <div class="hm--container">
-  <div class="hm--for" *ngFor="let btn of btns" (click)="open(btn.value)">
-    <div class="btn" [routerLink]="['/' + btn.routerValue]">
-      {{btn.viewValue}}
-    </div>
+  <div class="hm--page-count">
+    <!-- 1/10 -->
+  </div>
+
+  <div class="hm--slider">
+    <!-- <app-slider></app-slider> -->
   </div>
 </div>
+
+
+<!-- <div class="hm--for" *ngFor="let btn of btns" (click)="open(btn.value)">
+  <div class="btn" [routerLink]="['/' + btn.routerValue]">
+    {{btn.viewValue}}
+  </div>
+</div> -->

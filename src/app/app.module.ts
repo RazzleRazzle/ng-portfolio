@@ -11,6 +11,8 @@ import { LandingLogoComponent } from './components/landing/landing-logo/landing-
 import { PhotographViewComponent } from './components/views/photograph-view/photograph-view.component';
 import { HomeMenuComponent } from './components/home/home-menu/home-menu.component';
 import { HomeContainerComponent } from './components/home/home-container.component';
+import { SliderComponent } from './components/home/slider/slider.component';
+
 
 
 //----------------------------Services---------------------------------------------------------//
@@ -19,6 +21,7 @@ import {ThreeJsService} from '../services/three-services/three-js.service';
 import {CursorTrackerService} from '../services/component-services/cursor-tracker/cursor-tracker.service';
 import { LandingCanvasService} from '../services/component-services/canvas-service/landing-canvas.service';
 import { HomeCanvasService } from '../services/component-services/canvas-service/home-canvas/home-canvas.service';
+import { ScrollTrackerService } from '../services/component-services/scroll-tracker/scroll-tracker.service';
 
 
 //---------------------------Routing-----------------------------------------------------------//
@@ -38,7 +41,8 @@ const appRoutes: Routes = [
     LandingLogoComponent,
     HomeContainerComponent,
     HomeMenuComponent,
-    PhotographViewComponent
+    PhotographViewComponent,
+    SliderComponent,
   ],
   imports: [
   	RouterModule.forRoot(
@@ -53,7 +57,8 @@ const appRoutes: Routes = [
     ThreeJsService,
     CursorTrackerService,
     LandingCanvasService,
-    HomeCanvasService
+    HomeCanvasService,
+    ScrollTrackerService
   ],
   bootstrap: [AppComponent]
 })

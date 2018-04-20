@@ -1,0 +1,31 @@
+@import "../../../../styles.scss";
+
+.slider--container {
+  @include w-h(100%, 90%);
+  font-family: $abel;
+  @include flex-center();
+  color: white;
+
+  .slider--circle {
+    @include w-h(3vw, 3vw);
+    // border: 1px solid blue;
+    @include flex-center();
+    position: absolute;
+    z-index: 8;
+    transition: .3s all;
+    &:hover{
+      transform: scale(1.1);
+    }
+    &:active{
+      transform: scale(1.2);
+    }
+  }
+
+  .slider--line {
+    @include w-h(100%, 100%);
+    svg {
+      @include w-h(80rem, 10vh);
+    }
+
+  }
+}

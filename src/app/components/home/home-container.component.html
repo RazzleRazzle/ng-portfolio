@@ -1,31 +1,8 @@
-<div class="home--main-container">
-  <div class="home--content-overlay">
+<div class="home--main-container" (mousedown)="trackScroll.onDown($event)" (mouseup)="trackScroll.onRelease($event)">
 
-    <section class="col-1"></section>
 
-    <section class="col-2">
-      <div class="cell-1">JAKE MUSICH</div>
-    </section>
-
-    <section class="col-3">
-    </section>
-
-    <section class="col-4">
-      <app-home-menu></app-home-menu>
-
-    </section>
-
-    <section class="col-5">
-    </section>
-
-    <div class="guide"></div>
-
+  <div class="home--line-container">
+    <app-slider></app-slider>
   </div>
 
-  <div class="home--canvas-container">
-    <div id="home--canvas">
-      <img src="../../../assets/iceland_landscape_2.jpg" alt="">
-      <!-- <canvas id="canvas" [style.width.px]="canvasWidth" [style.height.px]="canvasHieght"></canvas> -->
-    </div>
-  </div>
 </div>

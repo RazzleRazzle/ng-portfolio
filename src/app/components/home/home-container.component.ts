@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {CallbackRouterAnimation} from '../../router-animation/router-animation';
+import { ScrollTrackerService } from '../../../services/component-services/scroll-tracker/scroll-tracker.service';
+import anime from 'animejs';
+
+
 @Component({
   selector: 'app-home-container',
   templateUrl: './home-container.component.html',
@@ -11,10 +15,11 @@ export class HomeContainerComponent implements OnInit {
   private canvasHeight:any;
   private canvasWidth:any;
 
-  constructor() { }
+  constructor(
+    private trackScroll:ScrollTrackerService
+  ) { }
 
   ngOnInit() {
-    // this.onResize();
   }
 
   private open = (value:string) => {

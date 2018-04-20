@@ -2,82 +2,15 @@
 
 .home--main-container {
   @include w-h(100vw, 100vh);
+  background-image: url("../../../assets/iceland_landscape_1.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include flex-center();
 
-  .home--content-overlay {
-    @include w-h(100vw, 100vh);
-    background: transparent;
-    display: inline-flex;
-    z-index: 1;
-
-    .col-1 {
-      @include w-h(15vw, 100vh);
-      // background: rgba(39, 30, 130, 0.21);/
-
-    }
-
-    .col-2 {
-      @include w-h(15vw, 100vh);
-      color: white;
-      font-family: $crimson;
-      // background: rgba(199, 9, 117, 0.21);
-
-      .cell-1 {
-        @include w-h(100%, 25vh);
-        position: absolute;
-        top: 75vh;
-        right: 15vw;
-          font-family: $abel;
-          letter-spacing: 1px;
-        // background: rgba(199, 29, 17, 0.21);
-        @include flex-center();
-
-      }
-    }
-
-
-    .col-3 {
-      @include w-h(30vw, 100vh);
-      // background: rgba(99, 80, 117, 0.21);
-      @include flex-center();
-    }
-
-
-    .col-4 {
-      @include w-h(30vw, 100vh);
-      color: white;
-      font-family: $crimson;
-      // background: rgba(79, 60, 117, 0.21);
-      @include flex-center();
-
-    }
-
-    .col-5 {
-      @include w-h(15vw, 100vh);
-      // background: rgba(97, 12, 103, 0.51);
-      color: white;
-      font-family: $crimson;
-      // @include flex-center();
-
-    }
+  .home--line-container {
+    @include w-h(30vw, 5vh);
+    @include flex-center();
   }
-
-  .home--canvas-container {
-    @include w-h(100vw, 100vh);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-
-    #home--canvas {
-      @include w-h(100vw, 100vh);
-
-      img {
-        @include w-h(inherit, inherit);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    }
-  }
-
 }
